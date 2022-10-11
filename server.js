@@ -20,7 +20,7 @@ app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 connectDB();
-const port = process.env.PORT || 2368;
+const port = process.env.PORT || 8201;
 
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
